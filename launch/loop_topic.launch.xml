@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="loop_topic_test" exec="loop_publisher_node"/>
+    <node pkg="loop_topic_test" exec="loop_subscriber_node"/>
+</launch>
