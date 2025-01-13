@@ -11,11 +11,11 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 
 # Set target
-add_executable(loop_publisher_node src/loop_publisher_node.cpp)
+add_executable(loop_publisher_node src/loop_publisher.cpp)
 target_compile_features(loop_publisher_node PRIVATE c_std_99 cxx_std_17)
 ament_target_dependencies(loop_publisher_node rclcpp std_msgs)
 
-add_executable(loop_subscriber_node src/loop_subscriber_node.cpp)
+add_executable(loop_subscriber_node src/loop_subscriber.cpp)
 target_compile_features(loop_subscriber_node PRIVATE c_std_99 cxx_std_17)
 ament_target_dependencies(loop_subscriber_node rclcpp std_msgs)
 
